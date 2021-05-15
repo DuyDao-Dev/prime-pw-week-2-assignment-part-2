@@ -26,9 +26,10 @@ if (number >= 2) {
 
 
 // 1. WRITE YOUR DESCRIPTION HERE
-// Line 17 lets us know that the variable's name is called "number" and the value of number is "1".
-// Line 19 is an increment operator and it would not increase the value compared to if it was typed out ++number instead.
-// Line 21 is a Conditional which states that if the variable is greater than or equal to 2 that the console.log will display yes in the console.
+// Line 17 lets us know that the variable's name is called "number" and the value of number is 1.
+// Line 19 means it's incrementing the variable by 1. Now the variable value is now 2.
+// Line 21 is a conditional which states that if the variable is greater than or equal to 2 that the
+// console.log will display yes in the console.
 //
 
 //CODE
@@ -45,9 +46,9 @@ if (name === 'Mary') {
 */
 
 // 2. WRITE YOUR DESCRIPTION HERE
-// Line 36 states that the variable's name is "name" and the value is a string called "Dane".
-// For the condition on Line 38 the console that would populate would be How do you do? The reason for
-// this is this is because the conditions were not met. The variable "name" does not match.
+// Line 37 declares that the variable name is being assigned a string of Dane.
+// For the condition on Line 39 the message in the console would be How do you do? The reason for
+// this is this is because the else condition was met.
 //
 
 //CODE
@@ -70,14 +71,17 @@ console.log(secret)
 */
 
 // 3. WRITE YOUR DESCRIPTION HERE
-// In Line 55 there is no value stated for the variable "secret" but it is later assigned a string
-// value of "super" in Line 60.
-// In Line 57 the variable is named "code" and given the value of 123.
-// In Line 59 the condition states that the variable code has to be true and an exact match,
-// which in this case it is. It is also followed by setting a string value super to the variable
-// secret. In line 61 the variable code is given a new value which is 123 multiplied by 2 which is 246.
-// The second condition in line 64 states that code is less than 250 and the variable secret is given
-// a new string value of duper. Since the condition was not met in Line 64 the console will not populate.
+// In Line 56 there is no value stated for the variable "secret" but it is later assigned a string
+// value of "super" in Line 61.
+// In Line 58 we declared a variable named code and assigned the value of 123.
+// In Line 60 the condition states that the variable code has to be true and and has to be a number type,
+// which in this case it is.
+// In line 61 the variable secret is assigned the value 'super'.
+// In line 62 the variable code is being assigned a new value of itself multiplied by 2. (new value 246)
+// In line 65 we are creating another condition where if code is greater than 250, the variable secret
+// would be assigned 'duper'.
+// In line 69 the console would print 'super'. Reason being it has met the condition in line 60 but not
+// in line 65.
 
 //CODE
 /*
@@ -134,11 +138,22 @@ if (number >= 2) {
 // -- it is, so we set colorOne and colorTwo to 'purple'
 
   //The variable colorOne and colorTwo does not match the description. To correct this you would need to change
-  //colorOne's color to blue and colorTwo's color go red. In the condition the variable mix does equal
+  //colorOne's value to 'blue' and colorTwo's value to 'red'. In the condition the variable mix does equal
   //true so this would change colorOne to purple but colorTwo variable is missing in this condition. You
   //would need to add the code +colorTwo = 'purple' between the colorOne variable and the semicolon.
 
 /*
+// FIX:
+let colorOne = 'blue'; //swapped the colorOne value for blue per description.
+let colorTwo = 'red'; //swapped the colorOne value for red per description.
+let mix = true;
+
+if (mix === true) {
+  colorOne = 'purple';
+  colorTwo = 'purple'; //this was added because it was missing in original code.
+}
+
+
 let colorOne = 'red';
 let colorTwo = 'blue';
 let mix = true;
@@ -152,10 +167,11 @@ if (mix === true) {
 // We check if temp is higher than 39 and if time is greater or equal to  4
 // -- they are so we console.log 'throw away the food!'
 
-  //Everything is correct minus the compound conditional of "||" which would mean either side
+  //FIX: Everything is correct minus the compound conditional of "||" which would mean either side
   //or variable can be true to satisfy the condition. It would need to instead be changed to "&&"
   //instead to require both variables to meet the condition per requested in the description.
-  //**QUESTION HERE: Does there need to be a "let" before "const time = 4"???
+  //**QUESTION HERE: What is the difference between let and const?
+
 /*
 let temp = 40;
 const time = 4;
@@ -169,13 +185,24 @@ if (temp > 39 || time >= 4) {
 // We check if age is greater than or equal to minAge
 // -- it is, so we console.log 'enter'.
 
-  //The request is to pit the age variable to the minAge varible but the condition below
+  //FIX: The request is to pit the age variable to the minAge varible but the condition below
   //is typed out the wrong way. It should look "if(age >= minAge)". The if and else console.log
   //should be switched around. If the condition is met the console.log of enter should appear
   //while the else console.log of no entry should come up if the condition is not met which in
-  //this case the condition is met. The console.log enter would appear to match the request. 
+  //this case the condition is met. The console.log enter would appear to match the request.
 
 /*
+  FIX:
+  let age = 21;
+  const minAge = 21;
+
+  if(age >= minAge) {
+    console.log('enter');
+  } else {
+    console.log('no entry');
+  }
+
+
 let age = 21;
 const minAge = 21;
 
